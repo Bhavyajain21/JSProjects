@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:  rgb(11, 107, 99);;
+   
+}
+.nav-toggle{
+    display: none;
+}
+nav li{
+    list-style-type:none;
+}
+nav img{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    
+}
+nav .nav-header{
+    float: left;
+}
+nav .links{
+    position: absolute;
+    top: 18px;
+    float: left;
+    margin-left: 490px;
+    margin-right: auto;
+    
+}
+nav .links li{
+    display: inline;
+    letter-spacing: 2px;
+    padding: 20px;
+    font-size: 25px;
+    padding-top: -60px;
+}
+nav .links li a{
+    
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav .social-icons{
+    position: absolute;
+    top: 18px;
+    margin-left: 1220px;
+    float: left;
+}
+nav .social-icons li{
+    display: inline;
+    padding: 10px;
+    font-size: 25px;
+    padding-top: -60px;
+}
+nav .social-icons li a{
+    
+    text-decoration: none;
+    text-transform: capitalize; 
+}
+nav {
+    background-color: rgb(187, 255, 252);
+    width: 100%;
+    height: 60px;
+    box-shadow: 1px 1px 10px rgb(24, 90, 85);
+    
+}
+@media(max-width:500px){
+    .nav-toggle{
+        display: inline;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        font-size: 25px;
+        padding: 1px;
+        width: 40px;
+        -webkit-transition: -webkit-transform 1s;
+    }
+    .nav-toggle:hover{
+        -webkit-transform: rotate(90deg);
+        
+    }
+    nav img{
+        margin-left: -30px;
+    }
+    nav .social-icons{
+        display: none;
+    }
+    .links {
+        clear: both;
+        display:block;
+        position: absolute;
+        top: 70px;
+        
+        float: left;
+        margin-left: 100px;
+        margin-right: auto;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .show-links{
+        clear: both;
+        
+        position: absolute;
+        top: 70px;
+        left: -490px;
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+        display:flex;
+        align-items: center;
+        height: 600px;
+        display:flex;
+        flex-direction: column;
+        margin-top: 40px;
+        -webkit-transition: height 1s;
+    }
+    .show-links{
+        height: 270px;
+        background-color: rgba(253, 244, 237, 0.24);
+    }
+    .show-links li{
+        
+       text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+        -webkit-transition: background-color 0s;
+    } 
+    .show-links li:hover{
+        background-color: burlywood;
+    }
+}
