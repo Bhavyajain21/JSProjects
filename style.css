@@ -122,11 +122,11 @@ header {
     display: block;
     margin: 0;
     padding-top: 40px;
-    font-size: 1rem;
+    font-size: 2vw;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 300px;
-    font-size: 30px;
+    /* font-size: 30px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -192,5 +192,16 @@ footer {
         background-color: red;
         color: white;
         letter-spacing: 3px;
+    }
+    .section .title {
+        display: block;
+        margin: 0;
+        padding-top: 80px;
+        font-size: 3vw;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 300px;
+        /* font-size: 30px; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }
