@@ -1,0 +1,91 @@
+body{
+    background-color: turquoise;
+    padding: 20px;
+}
+.underline{
+    border: 2px solid rgb(7, 128, 128);
+    width: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -10px;
+}
+.title h2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+#person-img{
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: width 3s;
+}
+
+
+.review{
+    width: 30%;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: black 2px 2px 10px;
+    
+}
+
+#author,#job,#info{
+    text-align: center;
+}
+#author{
+    font-weight: 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#job{
+    font-size: 20px;
+    margin-top: -25px;
+    color: rgb(7, 128, 128);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+#info{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-container{
+    text-align: center;
+}
+.prev-btn,.next-btn{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: large;
+}
+.prev-btn:active,.next-btn:active{
+    border: none;
+    background: none;
+    appearance: none;
+}
+.prev-btn:hover,.next-btn:hover{
+    background-color: rgb(7, 128, 128); 
+}
+.random-btn{
+    
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+   outline: none;
+}
+.random-btn:hover{
+    background-color: rgb(7, 128, 128); 
+}
