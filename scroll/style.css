@@ -185,7 +185,8 @@ footer {
     .links li a {
         margin-bottom: 20px;
         /* margin-: 10px; */
-        width: 100%;
+        padding-left: 0;
+        width: 100vw;
         display: block;
         color: black;
         text-align: center;
