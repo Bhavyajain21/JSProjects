@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: linear-gradient(rgba(61, 231, 236, 0.5), rgba(39, 39, 39, 0.7)), url("hero-bcg.jpeg") center/cover;
+    background-repeat: no-repeat;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.links li {
+    list-style: none;
+    float: left;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+.links li a {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 60px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.banner {
+    /* text-transform: capitalize; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: center;
+    /* display: grid;
+    place-items: center; */
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner p {
+    text-transform: capitalize;
+    /* letter-spacing: 10px; */
+    width: 70%;
+    line-height: 170%;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner a {
+    color: blanchedalmond;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.banner a:hover {
+    background-color: white;
+    color: black;
+}
+
+.links-container {
+    margin-top: 10px;
+    float: right;
+    padding-right: 10%;
+}
+
+#nav {
+    display: block;
+    clear: both;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(17, 253, 202);
+}
+
+#about,
+#services,
+#tours {
+    display: block;
+    height: 100vh;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.links-container {
+    /* height: auto !important; */
+}
+
+.section .title {
+    display: block;
+    margin: 0;
+    padding-top: 40px;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300px;
+    /* font-size: 30px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section .title span {
+    color: teal;
+}
+
+footer {
+    padding: 50px;
+    font-size: 1.2vw;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+    letter-spacing: 3px;
+}
+
+@media(max-width:600px) {
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        padding: 20px;
+        top: 10px;
+        right: 40px;
+        font-size: 25px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        -webkit-transition: -webkit-transform .2s;
+    }
+    .nav-toggle:hover {
+        -webkit-transform: rotate(90deg);
+    }
+    .links-container {
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        /* height: auto !important; */
+        width: 100%;
+        /* display: none; */
+    }
+    .links {
+        clear: both;
+        padding: 0;
+        margin: 0;
+        /* margin-top: -30px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .links li a {
+        margin-bottom: 20px;
+        /* margin-: 10px; */
+        width: 100%;
+        display: block;
+        color: black;
+        text-align: center;
+    }
+    #nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        /* background-color: aquamarine; */
+        /* background: rgb(255, 255, 255); */
+        /* box-shadow: 1px 1px 5px black; */
+    }
+    .show-links {
+        /* display: block; */
+        /* height: 200px; */
+        background-color: aquamarine;
+    }
+    .banner h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8vw;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner p {
+        font-size: 3vw;
+        letter-spacing: 2px;
+        width: 90%;
+        line-height: 140%;
+    }
+    footer {
+        padding: 30px;
+        font-size: 2.9vw;
+        text-align: center;
+        text-transform: capitalize;
+        background-color: red;
+        color: white;
+        letter-spacing: 3px;
+    }
+    .section .title {
+        display: block;
+        margin: 0;
+        padding-top: 80px;
+        font-size: 3vw;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 300px;
+        /* font-size: 30px; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+
+@media(min-width: 800px) {
+    .links-container {
+        height: auto !important;
+    }
+}
