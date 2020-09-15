@@ -76,9 +76,7 @@ scrollLinks.forEach(function(link) {
             left: 0,
             top: position
         });
-        if (navbar.offsetTop == 0) {
-            navbar.classList.remove("show-links");
-        }
+       
         linksContainer.style.height = 0;
     });
 })
