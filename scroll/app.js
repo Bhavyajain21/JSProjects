@@ -23,8 +23,10 @@ navToggle.addEventListener("click", function() {
     const containerHeight = linksContainer.getBoundingClientRect().height;
     if (containerHeight === 0) {
         linksContainer.style.height = linksHeight + "px";
+        navbar.classList.add("show-links");
     } else {
         linksContainer.style.height = 0;
+        navbar.classList.remove("show-links");
     }
     // console.log(linksContainer.getBoundingClientRect());
 });
@@ -48,22 +50,21 @@ window.addEventListener("scroll", function() {
 
 });
 
-navToggle.addEventListener("click", function() {
-    if (navbar.classList.contains("show-links")) {
-        navbar.classList.remove("show-links");
-    } else {
-        navbar.classList.add("show-links");
-    }
-    if (scrollHeight < navHeight) {
-        navbar.classList.remove("show-links");
-    }
-});
+// navToggle.addEventListener("click", function() {
+//     if (navbar.classList.contains("show-links")) {
+//         navbar.classList.remove("show-links");
+//     } else {
+//         navbar.classList.add("show-links");
+//     }
+
+// });
 
 // ********** smooth scroll ************
 // select links
 
-// var bars = document.querySelector(".nav-toggle");
-// var links = document.querySelector(".links-container")
-// bars.addEventListener("click", function() {
-//     links.classList.toggle("show-links");
-// });
+var scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        linksContainer.style.height = 0;
+    });
+})
