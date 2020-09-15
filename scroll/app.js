@@ -4,7 +4,7 @@
 
 // slice extracts a section of a string without modifying original string
 
-//offsetTop - A Number, representing the top position of the element, in pixels
+//offsetTop - A Number, representing the top position of the element, in pixels.
 
 // ********** set date ************
 var date = document.querySelector(".date");
@@ -64,7 +64,21 @@ window.addEventListener("scroll", function() {
 
 var scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(function(link) {
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        // navigate to specific target
+        var id = e.currentTarget.getAttribute("href").slice(1);
+        console.log(id);
+        var element = document.getElementById(id);
+
+        var position = element.offsetTop;
+        window.scrollTo({
+            left: 0,
+            top: position
+        });
+        if (navbar.offsetTop == 0) {
+            navbar.classList.remove("show-links");
+        }
         linksContainer.style.height = 0;
     });
 })
