@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 620px;
+    height: 300px;
+    /* background-color: red; */
+    border: 2px solid red;
+    position: relative;
+}
+
+.bhai {
+    width: 20px;
+    height: 60px;
+    background-color: rgb(1, 15, 10);
+    position: absolute;
+    bottom: 0;
+}
+
+.animations {
+    animation: jump .5s linear;
+}
+
+.gaandu {
+    width: 20px;
+    height: 30px;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: slide 1s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 80px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+body {
+    background: #333;
+}
