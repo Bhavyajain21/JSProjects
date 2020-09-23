@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NavBar */
+
+.main {
+    margin-left: 5%;
+    padding: 20px;
+}
+
+.logo {
+    width: 50px;
+    float: left;
+}
+
+.heading {
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(94, 93, 93);
+}
+
+header {
+    background-color: rgb(7, 243, 211);
+    height: 90px;
+    /* padding: 90px; */
+}
+
+.lists {
+    float: right;
+    margin-top: -5px;
+    margin-right: 5%;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    padding-right: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(94, 93, 93);
+    text-transform: uppercase;
+}
