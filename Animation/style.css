@@ -1,0 +1,31 @@
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+    40% {
+        transform: translate3d(0, 30%, 0) scale3d(.7, 1.5, 1);
+    }
+    100% {
+        transform: translate3d(0, 100%, 0) scale3d(1.5, .7, 1);
+    }
+}
+
+.jump {
+    animation: jump .5s linear alternate infinite;
+    animation-fill-mode: forwards;
+}
+
+
+/* For demo: */
+
+body {
+    text-align: center;
+}
+
+* {
+    margin: 2em 2em 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif, sans;
+    font-weight: bold;
+}
