@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.contact-section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+    height: 90vh;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #ddd;
+}
+
+.contact-section h1:after {
+    content: "";
+    width: 10rem;
+    height: 1rem;
+    /* background: #34495e; */
+    color: #34495e;
+    margin: 4rem auto;
+}
+
+.contact-form {
+    max-width: 60rem;
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.6rem auto;
+    border: 0;
+    background: #111;
+    padding: 2rem 4rem;
+    outline: none;
+    color: #ddd;
+    transition: all 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 1rem 4px;
+    outline: none;
+    border-bottom: 3px solid #55c57a;
+}
+
+.contact-form-btn {
+    font-family: inherit;
+    background: #34495e;
+    color: #fff;
+    padding: 1.2rem 5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.contact-form-btn:hover {
+    cursor: pointer;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+ ::-webkit-input-placeholder {
+    color: #555;
+}
+
+.contact-form-text:invalid {
+    border-bottom: 3px solid #ff7730;
+}
+
+.contact-label {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.6s;
+    color: #fff;
+}
+
+.contact-form-text:placeholder-shown+.contact-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
